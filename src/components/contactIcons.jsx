@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Button } from "@mui/material";
 
 const ContactIcons = () => {
   return (
@@ -42,6 +42,10 @@ const ContactIcons = () => {
           style={{ fontSize: "50px", color: "#0077b5", aspectRatio: "3/2" }}
         ></i>
       </a>
+
+      <Box>
+        <Button>Resume</Button>
+      </Box>
     </Box>
   );
 };

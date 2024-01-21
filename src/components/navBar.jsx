@@ -14,6 +14,7 @@ import {
 
 import menu from "../images/menu.png";
 import { Link } from "react-scroll";
+
 const NavBar = () => {
   const [getOpen, setOpen] = useState(false);
 
@@ -21,17 +22,21 @@ const NavBar = () => {
     setOpen(!getOpen);
   };
 
+  const openResumeInNewWindow = () => {
+    // Open the resume link in a new window
+    window.open("https://drive.google.com/file/d/1K8rWPkLWTJTzkggSJ-XL5bBTAip-FPwB/view");
+  };
+
   const menuItems = [
     { text: "Home", to: "hero" },
     { text: "About", to: "about" },
     { text: "Projects", to: "project" },
     { text: "Contact", to: "contact" },
+    { text: "Resume", onClick: openResumeInNewWindow },  
   ];
 
   return (
-    <Box style={{
-      color: "black",
-    }}>
+    <Box style={{ color: "black" }}>
       <AppBar
         position="fixed"
         style={{
@@ -48,26 +53,17 @@ const NavBar = () => {
             onClose={toggleDrawer}
             PaperProps={{ style: { width: 250, backgroundColor: "grey" } }}
           >
-            <List style={{
-              color: "black"
-            }}>
+            <List style={{ color: "black" }}>
               {menuItems.map((item, index) => (
-               <ListItem button key={index}>
-               <Link to={item.to} 
-               spy={true} 
-               smooth={true} 
-               offset={50} 
-               duration={500}
-               onClick={toggleDrawer} 
-               style={{textDecoration:"none" }}>
-                 <ListItemText
-                   primary={item.text}
-                   primaryTypographyProps={{
-                     style: { color: "black", fontSize: "40px", textAlign: "center", fontFamily: "normal" },
-                   }}
-                 />
-               </Link>
-             </ListItem>
+                <ListItem button key={index} onClick={item.onClick || toggleDrawer}>
+                  {/* Use item.onClick or toggleDrawer based on whether an onClick handler is provided */}
+                  <ListItemText
+                    primary={item.text}
+                    primaryTypographyProps={{
+                      style: { color: "black", fontSize: "40px", textAlign: "center", fontFamily: "normal" },
+                    }}
+                  />
+                </ListItem>
               ))}
             </List>
           </Drawer>
@@ -98,23 +94,15 @@ const NavBar = () => {
               }}
             >
               {menuItems.map((item, index) => (
-                <ListItem button key={index}>
-                <Link to={item.to} 
-               spy={true} 
-               smooth={true} 
-               offset={50} 
-               duration={500} 
-                onClick={toggleDrawer} 
-                style={{textDecoration:"none" }}
-                smooth>
+                <ListItem button key={index} onClick={item.onClick}>
+                 
                   <ListItemText
                     primary={item.text}
                     primaryTypographyProps={{
                       style: { color: "black", fontSize: "20px", textAlign: "center", fontFamily: "normal" },
                     }}
                   />
-                </Link>
-              </ListItem>
+                </ListItem>
               ))}
             </List>
           </Hidden>
