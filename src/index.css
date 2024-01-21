@@ -5,12 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:#d9d9d9;
+   background-color:#d9d9d9;
+  
 }
-@font-face {
-  font-family: ;
-  src: url(../src/fonts/raleway_italic_500.woff2);
-}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

@@ -11,10 +11,12 @@ import Footer from './components/footer';
 
 
 
+
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App-header" style={{position:"fixed"}}>
         <NavBar />
       </header>
 
@@ -24,7 +26,7 @@ function App() {
           <About />
           <Project />
           <GitHubStats />
-          <Contact />
+          <Contact  />
         </main>
       </section>
       <footer>

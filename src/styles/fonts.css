@@ -5,3 +5,17 @@
     font-style: normal;
   }
   
+
+  @font-face {
+    font-family: "italic";
+    src: url(../fonts/raleway_italic_500.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "normal";
+    src: url(../fonts/raleway_normal_400.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }

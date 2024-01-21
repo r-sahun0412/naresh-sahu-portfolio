@@ -5,15 +5,24 @@ const GitHubStats = () => {
   const username = 'sahun0412';
 
   return (
-    <Grid textAlign="center" justifyContent="center" alignItems="center">
-      <Typography variant="h3" m={4}  sx={{
+    <Grid textAlign="center" 
+    justifyContent="center" 
+    alignItems="center"
+    pt={10}>
+      <Typography variant="h3" 
+      m={4}  
+      sx={{
               fontFamily: "FingerPaint",
               textAlign: "center",
               fontWeight: "500",
             }}>
         Github Contribution
       </Typography>
-      <Grid container spacing={1} textAlign="center" justifyContent="center" alignItems="center">
+      <Grid container 
+      spacing={1} 
+      textAlign="center" 
+      justifyContent="center" 
+      alignItems="center">
       <Grid item xs={11} md={6} lg={6}>
           <div className="project">
             <p align="center">
@@ -41,7 +50,7 @@ const GitHubStats = () => {
           </div>
         </Grid>
         <Grid item xs={11} md={6} lg={6}>
-          <div className="project" data-aos="flip-up" data-aos-duration="1000">
+          <div className="project" >
             <p align="center">
               <img
                 align="center"

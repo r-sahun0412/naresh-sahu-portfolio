@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { LinkedIn, LocationOn, Mail } from "@mui/icons-material";
-import "../styles/skills.css"
+import "../styles/skills.css";
 
 const Contact = () => {
   const form = useRef();
@@ -33,9 +33,13 @@ const Contact = () => {
   };
 
   return (
-    <Grid container justifyContent="center" alignItems="center" mt={4}>
+    <Grid container 
+    justifyContent="center" 
+    alignItems="center" 
+    pt={15} >
       <Typography
         variant="h3"
+        id="contact"
         sx={{
           fontFamily: "FingerPaint",
           textAlign: "center",
@@ -51,25 +55,62 @@ const Contact = () => {
         justifyContent="center"
         alignItems="center"
         textAlign=""
-        mt={4}
+        mt={8}
       >
-        <Grid items xs={10} md={5} lg={6} p={2}>
-          <Typography variant="h3">Let's connect</Typography>
-          <Typography variant="body1" >Have cool idea for new project? Want to build a cool website? Don't hesitate to contact me.</Typography>
+        <Grid items 
+        xs={10} 
+        md={5} 
+        lg={6} 
+        p={2}>
+          <Typography variant="h3" 
+          fontFamily="italic">
+            Let's connect
+          </Typography>
+          <Typography variant="body1" 
+          fontFamily="normal">
+            Have cool idea for new project? Want to build a cool website? Don't
+            hesitate to contact me.
+          </Typography>
 
-
-          <Grid item xs={12} md={6} lg={6} className="grid-item">
-          <LocationOn className="contact-icon"/>
-          <span>Chandrapur, Maharashtra, India</span>
-        </Grid>
-        <Grid item xs={12} md={6} lg={6} className="grid-item">
-          <LinkedIn className="contact-icon"/>
-          <span><a href="https://www.linkedin.com/in/naresh-sahu-82443b1b2/">Naresh Sahu</a></span>
-        </Grid>
-        <Grid item xs={12} md={6} lg={6} className="grid-item">
-          <Mail className="contact-icon"/>
-          <span><a href="mailto:sahun0499@gmail.com">sahun@0412</a></span>
-        </Grid>
+          <Grid item 
+          xs={12} 
+          md={6} 
+          lg={6} 
+          className="grid-item">
+            <LocationOn className="contact-icon" 
+            color="red" />
+            <span>Chandrapur, Maharashtra, India</span>
+          </Grid>
+          <Grid item 
+          xs={12} 
+          md={6} 
+          lg={6} 
+          className="grid-item">
+            <LinkedIn className="contact-icon" />
+            <span>
+              <a href="https://www.linkedin.com/in/naresh-sahu-82443b1b2/" 
+              style={{
+                textDecoration:"none",
+                color:"grey"
+                }}>
+                Naresh Sahu
+              </a>
+            </span>
+          </Grid>
+          <Grid item 
+          xs={12} 
+          md={6} 
+          lg={6} 
+          className="grid-item">
+            <Mail className="contact-icon" />
+            <span>
+              <a href="mailto:sahun0499@gmail.com" 
+              style={{
+                textDecoration:"none",
+                color:"grey"
+                }}>sahun@0412</a>
+            </span>
+          </Grid>
         </Grid>
 
         <Grid items xs={10} md={5} lg={5}>

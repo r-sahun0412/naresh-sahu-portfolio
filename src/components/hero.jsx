@@ -1,18 +1,16 @@
 import React, { useEffect, useRef } from "react";
-import Typed from "typed.js"; // Import Typed.js library
-import "../styles/hero.css";
-import pp from "../images/pp.jpeg";
+import Typed from "typed.js";
 import { Box, Typography } from "@mui/material";
 import ContactIcons from "./contactIcons";
+import gif from "../images/gif.gif";
+import "../styles/hero.css";
+
 
 const Hero = () => {
-  // const [showText, setShowText] = useState(1);
-
-  const el = useRef(null)
-
+  const el = useRef(null);
+  
   useEffect(() => {
-    // Set up Typed.js on component mount
-    const options = new Typed(el.current,{
+    const options = new Typed(el.current, {
       strings: ["a Front-End Developer!", "a MERN Stack Developer!"],
       typeSpeed: 100,
       backSpeed: 100,
@@ -20,76 +18,79 @@ const Hero = () => {
       loop: true,
       smartBackspace: true,
       showCursor: true,
-      cursorChar: ""
+      cursorChar: "",
     });
 
-    
-
-    // Clear Typed.js on component unmount
     return () => {
       options.destroy();
     };
   }, []);
 
+  
+
   return (
     <Box
+      id="hero"
       container
       spacing={2}
-      mt={10}
       sx={{
         display: "flex",
         justifyContent: "space-evenly",
         alignContent: "center",
         flexWrap: "wrap",
-        textAlign:"center"
+        textAlign: "center",
+        mt: [15, 10, 10],
       }}
     >
-      <Box
-        sx={{
-          mt: [0, 0, 20],
-        }}
-      >
-        <Typography
-          sx={{
-            color: "gray",
-            fontSize: 20,
-          }}
-        >
-          Hello! 👋 I'm
-        </Typography>
+      
+        <Box>
+          <Box
+            sx={{
+              mt: [0, 20, 20],
+            }}
+          >
+            <Typography
+              sx={{
+                color: "gray",
+                fontSize: 20,
+                fontFamily: "raleway-normal",
+                fontWeight: "200px",
+              }}
+            >
+              Hello! 👋 I'm
+            </Typography>
 
-        <Typography
-          sx={{
-            fontSize: 50,
-            display: "inline",
-            fontFamily:"FingerPaint",
-        color:"grey"
-          }}
-        >
-          Naresh Sahu
-        </Typography>
+            <Typography
+              sx={{
+                fontSize: 50,
+                display: "inline",
+                fontFamily: "FingerPaint",
+                color: "black",
+              }}
+            >
+              Naresh Sahu
+            </Typography>
 
-       <Box>
-       <div ref={el}
-          id="headline"
-          sx={{
-            display: "inline",
-          }}
-        ></div>
-       </Box>
-       <ContactIcons />
-      </Box>
+            <Box>
+              <div
+                ref={el}
+                id="headline"
+                style={{
+                  display: "inline",
+                  fontFamily: "normal",
+                  color: "#002fa7",
+                  fontSize: "20px",
+                }}
+              ></div>
+            </Box>
 
-      <Box
-        className="curtain"
-        sx={{
-          mt: 8,
-        }}
-      >
-        <figure>
-        <img src={pp}  alt="" width={400} height={400} />
+            <ContactIcons />
+          </Box>
+        </Box>
+      
 
-        </figure>
+      <Box className="curtain" mt={8}>
+        <img src={gif} alt="profile" width={400} height={400} />
       </Box>
     </Box>
   );

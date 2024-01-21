@@ -6,15 +6,20 @@ import redux from "../images/redux.png";
 import mongo from "../images/mongo.png";
 import node from "../images/node.png";
 import git from "../images/git.png";
+import bs from "../images/bs.png";
 import { Box, Grid, Typography } from "@mui/material";
 import "../styles/skills.css";
 
+
+
+
 const Skills = () => {
+ 
   return (
-    <Box container spacing={2}>
+  
+     <Box container spacing={2}  textAlign="center">
       <Typography variant="h3" sx={{
         fontFamily:"FingerPaint",
-        color:"grey"
       }}>Skills</Typography>
 
       <Grid container   mt={2} p={2}>
@@ -58,8 +63,14 @@ const Skills = () => {
           <img src={git} alt="" />
           <span>Git</span>
         </Grid>
+
+        <Grid item xs={6} md={6} lg={4} className="grid-item">
+          <img src={bs} alt="" />
+          <span>Bootstrap</span>
+        </Grid>
       </Grid>
     </Box>
+   
   );
 };
 
