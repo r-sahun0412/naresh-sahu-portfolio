@@ -1,4 +1,5 @@
 import { Box, Button } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const ContactIcons = () => {
   return (
@@ -43,9 +44,7 @@ const ContactIcons = () => {
         ></i>
       </a>
 
-      <Box>
-        <Button>Resume</Button>
-      </Box>
+      
     </Box>
   );
 };

@@ -11,7 +11,7 @@ import {
   ListItemText,
   Hidden,
 } from "@mui/material";
-
+import logo from "../images/logo.png";
 import menu from "../images/menu.png";
 import { Link } from "react-scroll";
 
@@ -23,7 +23,7 @@ const NavBar = () => {
   };
 
   const openResumeInNewWindow = () => {
-    // Open the resume link in a new window
+    
     window.open("https://drive.google.com/file/d/1K8rWPkLWTJTzkggSJ-XL5bBTAip-FPwB/view");
   };
 
@@ -70,9 +70,9 @@ const NavBar = () => {
         </Hidden>
 
         <Toolbar>
-          <Typography lgUp variant="h6" boxShadow={4}>
-            Naresh Sahu
-          </Typography>
+          <Link to="hero" lgUp variant="h6" boxShadow={4}>
+            <img width={250} src={logo} alt="" />
+          </Link>
           <div style={{ marginLeft: "auto" }}>
             <Hidden mdUp>
               <IconButton edge="end" color="inherit" onClick={toggleDrawer}>

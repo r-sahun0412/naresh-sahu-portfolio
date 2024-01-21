@@ -1,11 +1,8 @@
 import { Box, Typography } from "@mui/material";
 import Skills from "./skills";
-import { motion } from "framer-motion";
+
 const About = () => {
-  const variants = {
-    hidden: { opacity: 0, x: -100 },
-    visible: { opacity: 1, x: 0 },
-  };
+ 
 
   
   return (
@@ -23,10 +20,7 @@ const About = () => {
           md: "nowrap" },
       }}
     >
-      <motion.div  initial="hidden"
-      animate="visible"
-      variants={variants}
-      transition={{ duration: 1, ease: "easeInOut" }}>
+      
 
       <Box m={2}
       p={2}  
@@ -79,7 +73,7 @@ const About = () => {
           </Typography>
         </Box>
       </Box>
-      </motion.div>
+      
 
       <Box mt={4} sx={{ xs: { flexWrap: "wrap" } }}>
         <Skills />
