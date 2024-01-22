@@ -3,7 +3,7 @@ import ContactIcons from "./contactIcons";
 
 const Footer = () => {
     return(
-        <Grid container spacing={2} mt={4}  style={{  backgroundColor:"#2d3e50", color:"black", maxHeight:'200px'}}>
+        <Grid container spacing={2} mt={4}  style={{  backgroundColor:"#173673", color:"black", maxHeight:'200px'}}>
             <Grid items xs={12} p={2}  justifyContent="center" alignItems="center" textAlign="center"
             >
                 <Typography variant='body1' color="grey">Made with ❤️ by
