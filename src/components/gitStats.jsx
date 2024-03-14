@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid, Typography } from '@mui/material';
 
 const GitHubStats = () => {
-  const username = 'sahun0412';
+  const username = 'r-sahun0412';
 
   return (
     <Grid textAlign="center" 
