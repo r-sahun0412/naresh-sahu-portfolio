@@ -24,7 +24,7 @@ const Project = () => {
       techStack: "Tech Stack : React, Redux, Bootstrap, FakeStoreAPI",
       desc: "An eCommerce masterpiece crafted using the React.js framework, boasting complete responsiveness for an optimal shopping journey.",
       image: fakestore,
-      repoLink: "",
+      repoLink: "https://github.com/r-sahun0412/fakestore",
     },
     {
       link: "https://nsmoviesdb-b6444.web.app/",
@@ -32,15 +32,15 @@ const Project = () => {
       techStack: "Tech Stack : HTML, CSS, React",
       desc: " MoviesDB is a React-based web app that fetches data from the OMDb API, allowing users to search for and view movie details.",
       image: moviesDB,
-      repoLink: "https://github.com/sahun0412/moviesdb",
+      repoLink: "https://github.com/r-sahun0412/moviesdb",
     },
     {
-      link: "https://sahun0412.github.io/Foodies/",
+      link: "https://foodie-black-three.vercel.app/",
       title: "Foodie",
       techStack: "Tech Stack : HTML, CSS, JavaScript",
       desc: " Foodie restaurant web app is an online application designed to cater to food enthusiasts, providing them with various features related to restaurants and dining experiences.",
       image: foodie,
-      repoLink: "https://github.com/sahun0412/Foodies",
+      repoLink: "https://github.com/r-sahun0412/Foodie",
     },
     {
       link: "https://little-moments-5686f.web.app/",
@@ -49,6 +49,14 @@ const Project = () => {
       desc: "LITTLE-MOMENTS is a React and Material-UI single-page UI that invites users on a virtual journey to explore unique places. And it showcases the beauty of different locations and encourages users to savor the little moments that travel brings.",
       image: littleMoments,
       repoLink: "https://github.com/sahun0412/little_Moments",
+    },
+    {
+      link: "https://dashboard-fitpeo-29436.web.app/",
+      title: "ReactDashboard",
+      techStack: "Tech Stack : React Js, Material UI,ReCharts",
+      desc: "The React dashboard, powered by Recharts, 📊 offers a visually compelling data representation with various graph types, including pie charts, providing users with insightful data visualization for informed decision-making and analysis.",
+      image: dashboard,
+      repoLink: "https://github.com/r-sahun0412/dashboard",
     },
   ]);
 
