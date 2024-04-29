@@ -44,7 +44,7 @@ const NavBar = () => {
   
   
   const openResumeInNewTab = () => {
-    window.open("https://drive.google.com/file/d/1K8rWPkLWTJTzkggSJ-XL5bBTAip-FPwB/view", "_blank");
+    window.open("https://drive.google.com/file/d/1NbiKIXm7WrhvxpNu4kGCdV2YB9pkuOVl/view", "_blank");
   };
 
   return (
