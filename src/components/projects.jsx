@@ -14,7 +14,7 @@ import fakestore from "../images/portfolio/fakestore.png";
 import moviesDB from "../images/portfolio/moviesDb.png";
 import foodie from "../images/portfolio/foodies.png";
 import littleMoments from "../images/portfolio/littleMoments.png";
-import dashboard from "../images/portfolio/dashboard.png";
+import dashboard from "../images/portfolio/dashboard.PNG";
 import { useState } from "react";
 
 const Project = () => {
