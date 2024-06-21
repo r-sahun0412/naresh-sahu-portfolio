@@ -26,7 +26,7 @@ const ContactIcons = () => {
         ></i>
       </a>
 
-      <a href="https://github.com/sahun0412" target="_blank" rel="noreferrer">
+      <a href="https://github.com/r-sahun0412" target="_blank" rel="noreferrer">
         <i
           className="bi bi-github"
           style={{ fontSize: "50px", color: "black", aspectRatio: "3/2" }}
@@ -34,7 +34,7 @@ const ContactIcons = () => {
       </a>
 
       <a
-        href="http://www.linkedin.com/in/naresh-sahu- 82443b1b2"
+        href="https://www.linkedin.com/in/naresh-sahu-82443b1b2/"
         target="_blank"
         rel="noreferrer"
       >
