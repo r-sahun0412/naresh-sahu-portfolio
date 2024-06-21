@@ -62,10 +62,7 @@ const Project = () => {
   ]);
 
   return (
-    <Box container 
-    spacing={2} 
-    pt={15} 
-    id="project">
+    <Box container spacing={2} pt={15} id="project">
       <Box>
         <Typography
           variant="h3"
@@ -89,22 +86,23 @@ const Project = () => {
       >
         {getCardItem.map((card, index) => (
           <Grid item xs={10.5} md={5.5} lg={5.5} key={index}>
-            <Card style={{ 
-              width: "100%", 
-              height: "550px", 
-              padding:"2px",
-              marginBottom:"20px"
-              }}>
+            <Card
+              style={{
+                width: "100%",
+                height: "550px",
+                padding: "2px",
+                marginBottom: "20px",
+              }}
+            >
               <CardMedia
                 className="card-img"
                 component="img"
                 sx={{
                   height: 240,
-                  objectFit: "fill"
+                  objectFit: "fill",
                 }}
                 image={card.image}
                 title={card.title}
-                
               />
               <CardContent>
                 <Typography
@@ -165,6 +163,24 @@ const Project = () => {
           </Grid>
         ))}
       </Grid>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          mt: 4,
+        }}
+      >
+        <Button
+          variant="contained"
+          color="primary"
+          size="large"
+          href="https://github.com/r-sahun0412?tab=repositories"
+          target="_blank"
+        >
+          View More
+        </Button>
+      </Box>
     </Box>
   );
 };

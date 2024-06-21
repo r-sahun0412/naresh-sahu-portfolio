@@ -17,6 +17,7 @@ import  {useState} from "react";
 import menu from "../images/menu.png";
 
 import { Link } from "react-scroll";
+import zIndex from "@mui/material/styles/zIndex";
 
 
 
@@ -53,6 +54,7 @@ const NavBar = () => {
 
     <Box style={{
       color: "black",
+      zIndex:2000
     }}>
       <AppBar
         position="fixed"
@@ -61,6 +63,8 @@ const NavBar = () => {
           justifyContent: "space-between",
           backgroundColor: "#fb7260",
           color: "black",
+          zIndex: 1300,
+          boxShadow: 4
         }}
       >
         <Hidden mdUp>
