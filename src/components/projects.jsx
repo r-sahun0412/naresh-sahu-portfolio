@@ -14,7 +14,7 @@ import fakestore from "../images/portfolio/fakestore.png";
 import moviesDB from "../images/portfolio/moviesDb.png";
 import foodie from "../images/portfolio/foodies.png";
 import littleMoments from "../images/portfolio/littleMoments.png";
-import dashboard from "../images/portfolio/dashboard.png";
+// import dashboard from "../images/portfolio/dashboard.png";
 import { useState } from "react";
 
 const Project = () => {
@@ -56,7 +56,7 @@ const Project = () => {
       title: "ReactDashboard",
       techStack: "Tech Stack : React Js, Material UI,ReCharts",
       desc: "The React dashboard, powered by Recharts, 📊 offers a visually compelling data representation with various graph types, including pie charts, providing users with insightful data visualization for informed decision-making and analysis.",
-      image: dashboard,
+      
       repoLink: "https://github.com/r-sahun0412/dashboard",
     }
   ]);
