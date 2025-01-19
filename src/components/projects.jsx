@@ -13,7 +13,7 @@ import "../styles/project.css";
 import fakestore from "../images/portfolio/fakestore.png";
 import moviesDB from "../images/portfolio/moviesDb.png";
 import foodie from "../images/portfolio/foodies.png";
-import foodie from "../images/portfolio/digitalclock.png";
+import digitalclock from "../images/portfolio/digitalclock.png";
 import littleMoments from "../images/portfolio/littleMoments.png";
 import dashboard from "../images/portfolio/dashboard1.png"
 import { useState } from "react";
