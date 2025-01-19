@@ -61,7 +61,7 @@ const Project = () => {
       repoLink: "https://github.com/r-sahun0412/dashboard",
     },
     {
-      link: "https://ns-digitalneonwatch.netlify.app/",
+      link: "https://digital-watch25.vercel.app/",
       title: "Digital Clock",
       techStack: "Tech Stack : React Js, Material UI",
       desc: "This Neon Digital Clock combines both functionality and an eye-catching design, making it a perfect fit for a modern web application or digital dashboard.",
@@ -98,7 +98,7 @@ const Project = () => {
             <Card
               style={{
                 width: "100%",
-                height: "660px",
+                height: "700px",
                 padding: "2px",
                 marginBottom: "20px",
               }}
