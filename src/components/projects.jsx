@@ -98,7 +98,7 @@ const Project = () => {
             <Card
               style={{
                 width: "100%",
-                height: "550px",
+                height: "600px",
                 padding: "2px",
                 marginBottom: "20px",
               }}
@@ -107,7 +107,7 @@ const Project = () => {
                 className="card-img"
                 component="img"
                 sx={{
-                  height: 240,
+                  height: 400,
                   objectFit: "fill",
                 }}
                 image={card.image}
