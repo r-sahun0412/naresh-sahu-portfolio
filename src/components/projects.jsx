@@ -98,7 +98,7 @@ const Project = () => {
             <Card
               style={{
                 width: "100%",
-                height: "800px",
+                height: "660px",
                 padding: "2px",
                 marginBottom: "20px",
               }}
