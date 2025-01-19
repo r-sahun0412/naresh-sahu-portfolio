@@ -58,6 +58,14 @@ const Project = () => {
       desc: "The React dashboard, powered by Recharts, 📊 offers a visually compelling data representation with various graph types, including pie charts, providing users with insightful data visualization for informed decision-making and analysis.",
       image: dashboard,
       repoLink: "https://github.com/r-sahun0412/dashboard",
+    },
+    {
+      link: "https://ns-digitalneonwatch.netlify.app/",
+      title: "Digital Clock",
+      techStack: "Tech Stack : React Js, Material UI",
+      desc: "This Neon Digital Clock combines both functionality and an eye-catching design, making it a perfect fit for a modern web application or digital dashboard.",
+      image: digitalclock,
+      repoLink: "https://github.com/r-sahun0412/digitalWatch25",
     }
   ]);
 
